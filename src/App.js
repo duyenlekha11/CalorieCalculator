@@ -7,12 +7,13 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <h1>Which service are you interested in?</h1>
+      <h1>How often do you excercise?</h1>
       <Dropdown>
         <Option selected value="Click to see options" />
-        <Option value="Option 1" />
-        <Option value="Option 2" />
-        <Option value="Option 3" />
+        <Option value="No excercise" />
+        <Option value="1-3 days a week" />
+        <Option value="4-5 days a week" />
+        <Option value="6-7 days a week" />
       </Dropdown>
     </div>
   );
