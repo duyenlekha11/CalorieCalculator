@@ -5,7 +5,7 @@ export const MenuItems = [
         cName: 'nav-links'
     },
     {
-        title: 'Food Calories',
+        title: 'Food Calculator',
         url: '#',
         cName: 'nav-links'
     },
