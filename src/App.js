@@ -8,6 +8,7 @@ import Layout from './Layout'
 import Navbar  from './components/Navbar/Navbar';
 import { Router, Route, Link, BrowserRouter, Routes } from 'react-router-dom'
 import axios from 'axios'
+import { Dropdown, Option } from "./components/Dropdown/Dropdown";
 
 // export default axios.create({
 //   baseURL: 'https://api.nal.usda.gov/fdc/v1/',
@@ -34,7 +35,17 @@ function App() {
     //   <Navbar />
       
     // </div>
-  
+    <div className="App">
+      <Navbar />
+      <h1>How often do you excercise?</h1>
+      <Dropdown>
+        <Option selected value="Click to see options" />
+        <Option value="No excercise" />
+        <Option value="1-3 days a week" />
+        <Option value="4-5 days a week" />
+        <Option value="6-7 days a week" />
+      </Dropdown>
+    </div>
   );
 }
 
