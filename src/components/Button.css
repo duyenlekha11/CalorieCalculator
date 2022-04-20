@@ -14,7 +14,7 @@
     transition: all 0.3s ease-out;
     background: #fff;
     color: #6568F4;
-    transition: 250ms;
+    transition: 150ms;
 }
 
 .btn--primary{
@@ -38,8 +38,8 @@
 }
 
 .btn--large{
-    padding: 12px 26px;
+    padding: 8px 20px;
     border-radius: 4px;
-    font-size: 20px;
+    font-size: 18px;
     color: #fff;
 }

@@ -8,7 +8,6 @@ import Layout from './Layout'
 import Navbar  from './components/Navbar/Navbar';
 import { Router, Route, Link, BrowserRouter, Routes } from 'react-router-dom'
 import axios from 'axios'
-import { Dropdown, Option } from "./components/Dropdown/Dropdown";
 
 // export default axios.create({
 //   baseURL: 'https://api.nal.usda.gov/fdc/v1/',
