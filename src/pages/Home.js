@@ -75,20 +75,20 @@ class Home extends Component{
         }
         this.setState({bmr:bmrCalc})
 
-        let activitySug = ';'
-        if (bmrCalc <= 1926) {
-            activitySug = " not exercise";
-        } else if (bmrCalc > 1926 && bmrCalc <= 2207) {
-            activitySug = " exercise 1-3 times/week";
-        } else if (bmrCalc > 2207 && bmrCalc <= 2351) {
-            activitySug = " exercise 4-5 times/week";
-        } else if (bmrCalc > 2351 && bmrCalc <= 2488) {
-            activitySug = " exercise daily or do intense exercises 3-4 times/week";
-        } else if (bmrCalc > 2488 && bmrCalc <= 2796) {
-            activitySug = " do intense exercises 6-7 times/week";
-        } else if (bmrCalc > 2796) {
-            activitySug = " do very intense exercises daily";
-        }
+        // let activitySug = ';'
+        // if (bmrCalc <= 1926) {
+        //     activitySug = " not exercise";
+        // } else if (bmrCalc > 1926 && bmrCalc <= 2207) {
+        //     activitySug = " exercise 1-3 times/week";
+        // } else if (bmrCalc > 2207 && bmrCalc <= 2351) {
+        //     activitySug = " exercise 4-5 times/week";
+        // } else if (bmrCalc > 2351 && bmrCalc <= 2488) {
+        //     activitySug = " exercise daily or do intense exercises 3-4 times/week";
+        // } else if (bmrCalc > 2488 && bmrCalc <= 2796) {
+        //     activitySug = " do intense exercises 6-7 times/week";
+        // } else if (bmrCalc > 2796) {
+        //     activitySug = " do very intense exercises daily";
+        // }
         //this.setState({bmrsugg: "Suggestion: You should " +  activitySug + " in order to ?"})
 
         this.setState({error:""});
@@ -154,11 +154,11 @@ class Home extends Component{
                 </div>
                 <button type="button" onClick={() => this.calculateBMR()}>Calculate BMR</button>
                 {resultBMR}
-                {resultSug}
+                {/* {resultSug} */}
                 <div className="workout">
                     <div className="inputwrap">
                         <label className="label">Workout in a Week</label>
-                        <select className="activity" value = {this.state.activity} onChange={this.handleactivityChange} name="activity">
+                        <select className="activity" value = {this.state.activity} onChange={this.handleactivityChange} name="activity"> 
                             <option value="">Select your Activity</option>
                             <option value="1.2">Sedentary (Very little or no exercise, and desk job)</option>
                             <option value="1.375">Lightly Active (Light exercise 1 to 3 days per week)</option>
