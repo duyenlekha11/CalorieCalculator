@@ -1,0 +1,136 @@
+body {
+  background-color: rgba(101, 216, 210, 0.911);
+  /* sets the color for the background of the page */
+}
+.box {
+  background-color: rgb(59, 100, 235);
+  width: 400px;
+  height: 1100px;
+  padding: 50px;
+  margin: 20px;
+}
+
+.heading-Main {
+    color: rgb(0, 0, 0);
+    /*sets text color */
+    position: absolute;
+    /*sets starting position for the text */
+    top: 100px;
+    /*sets text 100 pixels from the top relative to the starting position */
+    bottom: 0px;
+    /*sets text 0 pixels from the bottom relative to the starting position */
+    right: 0px;
+    /* sets text 0 pixels from the right relative to the starting position */
+    left: 495px;
+    /* sets text 495 pixels from the left relative to the starting position */
+  }
+  .heading-Main-2 {
+    color: rgb(0, 0, 0);
+    /*sets text color */
+    position: absolute;
+    /*sets starting position for the text */
+    top: 170px;
+    /*sets text 170 pixels from the top relative to the starting position */
+    bottom: 0px;
+    /*sets text 0 pixels from the bottom relative to the starting position */
+    right: 0px;
+    /* sets text 0 pixels from the right relative to the starting position */
+    left: 255px;
+    /*sets text 375 pixels from the left relative to the starting position */
+  }
+  .heading-vid-1 {
+    color: rgb(0, 0, 0);
+    /*sets text color */
+    position: absolute;
+    /*sets starting position for the text */
+    top: 500px;
+    /*sets text 500 pixels from the top relative to the starting position */
+    bottom: 0px;
+    /*sets text 0 pixels from the bottom relative to the starting position */
+    right: 0px;
+    /* sets text 0 pixels from the right relative to the starting position */
+    left: 375px;
+    /*sets text 375 pixels from the left relative to the starting position */
+  }
+  .heading-vid-2 {
+    color: rgb(0, 0, 0);
+    /*sets text color */
+    position: absolute;
+    /*sets starting position for the text */
+    top: 765px;
+    /*sets text 765 pixels from the top relative to the starting position */
+    bottom: 0px;
+    /*sets text 0 pixels from the bottom relative to the starting position */
+    right: 0px;
+    /*sets text 0 pixels from the right relative to the starting position */
+    left: 375px;
+    /*sets text 375 pixels from the left relative to the starting position */
+  }
+  .heading-vid-3 {
+    color: rgb(0, 0, 0);
+    /*sets text color */
+    position: absolute;
+    /*sets starting position for the text */
+    top: 1000px;
+    /*sets text 1000 pixels from the top relative to the starting position */
+    bottom: 0px;
+    /*sets text 0 pixels from the bottom relative to the starting position */
+    right: 0px;
+    /* sets text 0 pixels from the right relative to the starting position */
+    left: 375px;
+    /*sets text 375 pixels from the left relative to the starting position */
+  }
+.video-1 {
+    position: absolute;
+    /*sets starting position for the video */
+    top: 300px;
+    /*sets video 300 pixels from the top relative to the starting position */
+    bottom: 0px;
+    /*sets video 0 pixels from the bottom relative to the starting position */
+    right: 0px;
+    /* sets video 0 pixels from the right relative to the starting position */
+    left: 470px;
+    /*sets video 375 pixels from the left relative to the starting position */
+    width: 20%;
+    /*sets width of the video player */
+    height: 20%;
+    /*sets height of the video player */
+    border: 0;
+    /*sets border width of the video player */
+}
+.video-2 {
+    position: absolute;
+    /*sets starting position for the video */
+    top: 600px;
+    /*sets video 600 pixels from the top relative to the starting position */
+    bottom: 0px;
+    /*sets video 0 pixels from the bottom relative to the starting position */
+    right: 0px;
+    /* sets video 0 pixels from the right relative to the starting position */
+    left: 470px;
+    /*sets video 375 pixels from the left relative to the starting position */
+    width: 20%;
+    /*sets width of the video player */
+    height: 20%;
+    /*sets height of the video player */
+    border: 0;
+    /*sets border width of the video player */
+}
+.video-3 {
+  position: absolute;
+  /*sets starting position for the video */
+  top: 820px;
+  /*sets video 820 pixels from the top relative to the starting position */
+  bottom: 0px;
+  /*sets video 0 pixels from the bottom relative to the starting position */
+  right: 0px;
+  /* sets video 0 pixels from the right relative to the starting position */
+  left: 470px;
+  /*sets video 375 pixels from the left relative to the starting position */
+  width: 20%;
+  /*sets width of the video player */
+  height: 20%;
+  /*sets height of the video player */
+  border: 0;
+  /*sets border width of the video player */
+}
