@@ -142,7 +142,7 @@ import AppMealsList from './AppMealsList/AppMealsList';
 import AppModal from './AppModal/AppModal';
 import AppMealsFilter from './AppMealsFilter/AppMealsFilter';
 const FoodCalories = () => {
-   const [meals, setMeals] = useState([]);
+   const [meals, setMeals] = useState(new Array());
    const [mealName, setMealName] = useState("");
    const [calories, setCalories] = useState(0);
    const [openModal, setOpenModal] = useState(false);
@@ -206,8 +206,15 @@ const FoodCalories = () => {
    },[selectedFilter])
 
    useEffect(()=>{
+       
        const localStorageMeals = JSON.parse(localStorage.getItem('meals'));
-       setMeals(localStorageMeals)
+       if (localStorageMeals !== null){
+            setMeals(localStorageMeals);
+       }
+       else {
+            setMeals([]);
+       }
+       
 
    }, [setMeals]);
 
