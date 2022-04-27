@@ -1,9 +1,9 @@
 body {
-  background-color: rgba(101, 216, 210, 0.911);
+  background-color: rgba(255, 255, 255, 0.911);
   /* sets the color for the background of the page */
 }
 .box {
-  background-color: rgb(59, 100, 235);
+  background-color: rgb(255, 255, 255);
   width: 400px;
   height: 1100px;
   padding: 50px;
