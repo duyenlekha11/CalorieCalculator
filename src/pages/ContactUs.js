@@ -1,75 +1,51 @@
 import React from "react";
 
-function onClickButton(event) {
-  event.preventDefault();
-}
+class ContactUs extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: '',
+      email: '',
+      message: ''
+    }
+  }
 
-function ContactUs() {
-  return (
-    <>
-      <div className="my-5">
-        <h1 className="text-center">Contact Us</h1>
-      </div>
-
-      <div className="container contact-div">
-        <div className="row">
-          <div className="col-md-6 col-10 mx-auto">
-            <form>
-              <div className="form-group">
-                <label for="exampleFormControlInput1">Enter Full Name</label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="exampleFormControlInput1"
-                  placeholder="Enter Your Name"
-                />
-              </div>
-              <div className="form-group pt-3">
-                <label for="exampleFormControlInput1">Contact Number</label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="exampleFormControlInput1"
-                  placeholder="+1 "
-                />
-              </div>
-              <div className="form-group pt-3">
-                <label for="exampleFormControlInput1">Email address</label>
-                <input
-                  type="email"
-                  className="form-control"
-                  id="exampleFormControlInput1"
-                  placeholder="name@example.com"
-                />
-              </div>
-
-              <div className="form-group pt-3">
-                <label for="exampleFormControlTextarea1">
-                  Type your Message Here
-                </label>
-                <textarea
-                  className="form-control"
-                  id="exampleFormControlTextarea1"
-                  rows="3"
-                  placeholder="Message"
-                ></textarea>
-              </div>
-
-              <div className="col-12 pt-3">
-                <button
-                  onClick={onClickButton}
-                  className="btn btn-outline-primary"
-                  type="submit"
-                >
-                  Submit form
-                </button>
-              </div>
-            </form>
+  render() {
+    return(
+      <div className="App">
+        <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
+          <div className="form-group">
+            <label htmlFor="name">Name</label>
+            <input type="text" className="form-control" value={this.state.name} onChange={this.onNameChange.bind(this)} />
           </div>
-        </div>
+          <div className="form-group">
+            <label htmlFor="exampleInputEmail1">Email address</label>
+            <input type="email" className="form-control" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
+          </div>
+          <div className="form-group">
+            <label htmlFor="message">Message</label>
+            <textarea className="form-control" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
+          </div>
+          <button type="submit" className="btn btn-primary">Submit</button>
+        </form>
       </div>
-    </>
-  );
+    );
+  }
+
+  onNameChange(event) {
+    this.setState({name: event.target.value})
+  }
+
+  onEmailChange(event) {
+    this.setState({email: event.target.value})
+  }
+
+  onMessageChange(event) {
+    this.setState({message: event.target.value})
+  }
+
+  handleSubmit(event) {
+  }
 }
 
 export default ContactUs;
